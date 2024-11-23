@@ -38,7 +38,7 @@
 	</style>
 </head>
 <body>
-	<h1>立体オセロ ver1.0.0</h1>
+	<h1>3D-Othello ver1.0.0</h1>
 	<canvas id="canvas" width="520" height="590">
 		canvas要素をサポートしていません。他のブラウザでお試しください。
 	</canvas>
@@ -57,8 +57,8 @@
 		const canvas = document.getElementById("canvas");
 		if (canvas.getContext) {
 			const context = canvas.getContext("2d");
-				context.fillStyle = "#008000"
-				context.fillRect(0,0,520,590)
+			context.fillStyle = "#008000";
+			context.fillRect(0,0,520,590);
 				for (let p = 0; p < 4; p ++) {
 				context.strokeStyle = "#40C000";
 				context.beginPath();
@@ -147,7 +147,7 @@
 					for (let x = 0; x < 4; x++) {	
 							if (flag[z][y][x] == 1) { 				
 							let n = x + 4 * y + 16 * z;
-							context.fillStyle = "#FFFF00"
+							context.fillStyle = "#FFFF00";
 							context.font = "20px serif";
 							context.fillText(n,160 + 100 * x - 40 * y,345 + 25 * y - 100 * z);
 						}
@@ -187,15 +187,15 @@
 			if (flag[fz][fy][fx] == 0) {
 				alert("そこには置けません");
 				return;
-			}			
+			}
 			if (num % 2 == 1) {
 				var at = 1;
 				var de = 2;
 			}else {
 				var at = 2;
 				var de = 1;
-			}			
-			status[fz][fy][fx] = at
+			}
+			status[fz][fy][fx] = at;
 			for (let c = -1; c < 2; c++) {
 				for (let b = -1; b < 2; b++) {
 					for (let a = -1; a < 2 ; a++) {
@@ -285,8 +285,8 @@
 					const context = canvas.getContext("2d");
 					let black = 0;
 					let white = 0;
-					context.fillStyle = "#008000"
-					context.fillRect(0,0,520,590)
+					context.fillStyle = "#008000";
+					context.fillRect(0,0,520,590);
 					for (let p = 0; p < 4; p ++) {
 						context.strokeStyle = "#40C000";
 						context.beginPath();
@@ -363,7 +363,7 @@
 									context.arc(170 + 100 * x - 40 * y,350 + 25 * y - 100 * z,3,0,Math.PI * 2,true);
 									context.closePath();
 									context.fill();
-									context.font = "20px serif"
+									context.font = "20px serif";
 									context.fillText(n,160 + 100 * x - 40 * y,345 + 25 * y - 100 * z);
 								}else {
 									context.fillStyle = "#000000";
