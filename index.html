@@ -83,7 +83,7 @@
 							context.arc(170 + 100 * x - 40 * y,350 + 25 * y - 100 * z,31,0,Math.PI * 2,true);
 							context.closePath();
 							context.stroke();
-							if (y == 2) {
+							if (y == 2 && x != 3) {
 								context.strokeStyle = "#40C000";
 								context.beginPath();
 								context.moveTo(70 + 100 * x,425 - 100 * z);
@@ -99,6 +99,14 @@
 								context.closePath();
 								context.stroke();
 							}
+							if (x != 1 && x != 2 && y != 3) {								
+								context.strokeStyle = "#40C000";
+								context.beginPath();
+								context.moveTo(138 + 100 * x - 40 * y,370 + 25 * y - 100 * z);		
+								context.lineTo(150 + 100 * x - 40 * y,362.5 + 25 * y - 100 * z);
+								context.closePath();
+								context.stroke();
+							}
 						}else if (status[z][y][x] == 2) {
 							context.fillStyle = "#FFFFFF";
 							context.beginPath();
@@ -110,7 +118,7 @@
 							context.arc(170 + 100 * x - 40 * y,350 + 25 * y - 100 * z,31,0,Math.PI * 2,true);
 							context.closePath();
 							context.stroke();
-							if (y == 2) {
+							if (y == 2 && x != 3) {
 								context.strokeStyle = "#40C000";
 								context.beginPath();
 								context.moveTo(70 + 100 * x,425 - 100 * z);
@@ -123,6 +131,14 @@
 								context.beginPath();
 								context.moveTo(150 + 100 * x,325 - 100 * z);
 								context.lineTo(190 + 100 * x,325 - 100 * z);
+								context.closePath();
+								context.stroke();
+							}
+							if (x != 1 && x != 2 && y != 3) {								
+								context.strokeStyle = "#40C000";
+								context.beginPath();
+								context.moveTo(138 + 100 * x - 40 * y,370 + 25 * y - 100 * z);		
+								context.lineTo(150 + 100 * x - 40 * y,362.5 + 25 * y - 100 * z);
 								context.closePath();
 								context.stroke();
 							}
@@ -312,7 +328,7 @@
 									context.arc(170 + 100 * x - 40 * y,350 + 25 * y - 100 * z,31,0,Math.PI * 2,true);
 									context.closePath();
 									context.stroke();
-									if (y == 2) {
+									if (y == 2 && x != 3) {
 										context.strokeStyle = "#40C000";
 										context.beginPath();
 										context.moveTo(70 + 100 * x,425 - 100 * z);							
@@ -328,6 +344,14 @@
 										context.closePath();
 										context.stroke();
 									}
+									if (x != 1 && x != 2 && y != 3) {								
+										context.strokeStyle = "#40C000";
+										context.beginPath();
+										context.moveTo(138 + 100 * x - 40 * y,370 + 25 * y - 100 * z);		
+										context.lineTo(150 + 100 * x - 40 * y,362.5 + 25 * y - 100 * z);
+										context.closePath();
+										context.stroke();
+									}
 								}else if (status[z][y][x] == 2) {
 									white += 1;
 									context.fillStyle = "#FFFFFF";
@@ -340,7 +364,7 @@
 									context.arc(170 + 100 * x - 40 * y,350 + 25 * y - 100 * z,31,0,Math.PI * 2,true);
 									context.closePath();
 									context.stroke();
-									if (y == 2) {
+									if (y == 2 && x != 3) {
 										context.strokeStyle = "#40C000";
 										context.beginPath();
 										context.moveTo(70 + 100 * x,425 - 100 * z);							
@@ -353,6 +377,14 @@
 										context.beginPath();
 										context.moveTo(150 + 100 * x,325 - 100 * z);						
 										context.lineTo(190 + 100 * x,325 - 100 * z);
+										context.closePath();
+										context.stroke();
+									}
+									if (x != 1 && x != 2 && y != 3) {								
+										context.strokeStyle = "#40C000";
+										context.beginPath();
+										context.moveTo(138 + 100 * x - 40 * y,370 + 25 * y - 100 * z);		
+										context.lineTo(150 + 100 * x - 40 * y,362.5 + 25 * y - 100 * z);
 										context.closePath();
 										context.stroke();
 									}
