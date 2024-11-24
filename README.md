@@ -1,3 +1,2 @@
-# 立体オセロ　3D-Othello
-オセロを３次元空間に拡張したゲームです。  
+# 3D-Othello
 This is the Othello Game expanded to 3D.
