@@ -1,2 +1,3 @@
-# 3D-Othello
-This is the Othello Game expanded to 3D.
+# 立体オセロ 3D-Othello
+3次元空間上に拡張されたオセロです。
+This is Othello expanded to 3D.
