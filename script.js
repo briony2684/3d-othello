@@ -168,7 +168,7 @@ function draw() {
 		context.arc(387.5,512.5,18,0,Math.PI * 2,true);
 		context.closePath();
 		context.fill();
-		context.fillText(white,420,529);
+		context.fillText(white,415,529);
 		context.fillStyle = "#000000";
 		context.font = "28px serif";
 		if (pj == 2){
